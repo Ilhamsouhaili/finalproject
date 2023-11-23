@@ -1,0 +1,93 @@
+
+body {
+    background-color: #dedede;
+}
+
+h1 {
+    text-align: center;
+    font-family:Arial, sans-serif;
+    font-size: 32px;
+}
+
+a {
+    color: #000;
+    text-decoration: none;
+    font-family:Arial, sans-serif;
+}
+
+p {
+   font-size: 25px;
+   font-family:Arial, sans-serif;
+}
+
+img{
+  width:100%;
+  border-radius: 10px;
+}
+
+
+p{
+  text-align:center;
+}
+
+.grid figure img{
+    width:150px;
+    height: 150px;
+    display: flex wrap;
+    margin:auto;
+}
+.grid figure figcaption{
+    text-align: center;
+}
+.grid{
+  display: flex wrap;
+  width: 24%;
+  margin: 5px;
+  padding: 2px;
+  
+}
+
+
+
+@media screen and (max-width: 772px){
+    .grid figure img{
+        width:150px;
+        height: 30%;
+        display: flex wrap;
+        margin:auto;
+    }
+    .grid{
+       /* display: flex;*/
+       display: flex wrap;
+        width: 45%;
+        margin: 5px;
+        padding: 2px;
+      }
+}
+
+@media screen and (max-width: 992px){
+    .grid img:nth-child(3n){
+        grid-column: 1 / span 2;
+      }
+    .grid figure img{
+        width:30%;
+        height: 30%;
+        display: flex wrap;
+        margin:auto;
+    } 
+    img{
+        width:100%;
+        border-radius: 50px;
+      }  
+    .grid{
+       /* display: flex;*/
+       display: flex wrap;
+        width: 30%;
+        margin: 5px;
+        padding: 2px;
+        grid-template-columns: 1fr 1fr 1fr;
+        align-items: stretch;
+      }
+     
+      
+}
